@@ -4,7 +4,7 @@ set -e
 set -u
 set -x
 
-VERSION=`head -n 5 Changelog | grep version | head -n 1 | cut -d ' ' -f 3`;
+VERSION=`head -n 10 Changelog | grep version | head -n 1 | cut -d ' ' -f 3`;
 DISTDIR=better-cacti-templates-$VERSION
 
 if test -d $DISTDIR ; then rm -rf $DISTDIR ; fi
